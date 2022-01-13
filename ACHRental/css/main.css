@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+html {
+  font-size: 62.5%;
+  min-height: 100%;
+}
+
+body {
+  font-size: 16px;
+  min-height: 100%;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.8rem;
+}
+h2 {
+  font-size: 2.8rem;
+}
+h3 {
+  font-size: 1.8rem;
+}
+
+.contenedor {
+  margin: 0 auto;
+  max-width: 120rem;
+}
+
+.main-contenedor {
+    position:relative;
+    height:900px;
+}
+    .main-contenedor #form1 .nav-bg {
+        background-color: #2EE9B5;
+    }
+
+
+    /* Start css*/
+    .titulo {
+        background-color: #14559b;
+        padding: 10px;
+        position: relative;
+    }
+
+.icono{
+    position:absolute;
+    color:black;
+    right:100px;
+    top:20px;
+    font-size:30px;
+   
+}
+
+
+/*navegacion*/
+.nav-bg {
+  background-color: #0097a7;
+}
+
+.navegacion-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .navegacion-principal {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.navegacion-principal a {
+  display: block;
+  text-align: center;
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+#LnkPublicar,#LnkVer,#LnkPerfil {
+    display: block;
+    text-align: center;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.navegacion-principal a:hover {
+    background-color: #ffc107;
+    color: #212121;
+}
+
+/*hero*/
+
+.hero {
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    padding: 50px;
+    margin-bottom: 2rem;
+    border-bottom: 5px black solid;
+  }
+
+  @media (min-width:768px ) {
+    .servicios{
+      display: grid;
+      grid-template-columns:repeat(4, 1fr) ;
+      column-gap: 5rem;
+    
+    }
+  }
+  
+  .servicio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom:10px;
+  }
+
+
+  /*Servcios imagenes*/
+
+.icon-man {
+    border: 5px #0D6D5A solid;
+    margin-top: 10px;
+    padding: 5px;
+}
+img {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Formulario*/
+
+.formulario {
+    width: 420px;
+    min-height: 200px;
+    background-color: lightgray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -200px;
+    border-radius: 20px;
+    box-shadow: 4px 5px 10px rgba(50,50,50,9);
+    overflow: hidden;
+    
+}
+
+.formulario h3 {
+        padding: 10px;
+}
+.formulario a{
+    text-align:center;
+    text-decoration:none;
+    padding:10px;
+}
+
+
+
+.formulario input[type="text"], input[type="email"], input[type="password"], input[type="number"] {
+    width: 350px;
+    height: 35px;
+    margin-left: 25px;
+    padding-left: 30px;
+    margin-top: 10px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: azure;
+}
+
+    .formulario input[type="submit"] {
+        width: 350px;
+        height: 35px;
+        margin-left: 35px;
+        padding-left: 30px;
+        margin-top: 30px;
+        border: 0px;
+        border-radius: 20px;
+        outline: none;
+        font-size: 20px;
+        background-color: rgba(220,220,220,9);
+        box-shadow: 2px 3px 3px rgba(50,50,50,9);
+        margin-bottom: 30px;
+    }
+
+.formulario input[type="submit"]:hover {
+    background-color: silver;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.formularioinput[type="number"]:focus {
+    background-color: whitesmoke;
+    color: black;
+}
+
+
+/*resgitro maquinas*/
+
+
+.tblRegistro {
+    background-color: darkgray;
+    margin:auto;
+    margin-top: 50px;
+    border-radius: 20px;
+    height: 250px;
+    width: 380px;
+}
+
+.titregistro {
+    text-align: center;
+    font-weight: bold;
+}
+
+#BntEnviar {
+    margin-top: 20px;
+    margin-bottom:15px;
+    margin-left: 15px;
+}
+
+.datoregistro {
+    text-align: center;
+    padding: 10px;
+}
+
+/*Ofertas*/
+
+.sectofertas1 {
+    width: 1100px;
+    height: auto;
+    position: relative;
+    border: 2px solid black;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-color: darkgray;
+}
+
+.ofertas {
+    list-style: none;
+    position: relative;
+    margin-bottom: 20px;
+    height: auto;
+    width: 1100px;
+}
+
+    .ofertas tr td {
+        border: 1px solid black;
+        width: 200px;
+        height: auto;
+        position: relative;
+        margin: 50px;
+        text-align: center;
+        border-radius: 20px;
+        background-color: white;
+    }
+
+        .ofertas tr td img {
+            width: 200px;
+            height: 150px;
+        }
+
+
+
+
+/*footer*/
+
+.footer {
+    border: 2px black solid;
+    background-color: #14B2C3;
+}
+
+
+@media (min-width:768px ) {
+    .servicios-fo {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 5rem;
+    }
+}
+
+.servicio-fo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
